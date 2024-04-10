@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { adminMailId, colors } from "../../utils/constants";
 import Button from "../../components/Button";
-import { Element, Link } from "react-scroll";
+import { Link } from "react-scroll";
 import Fade from "react-reveal/Fade";
 
 const AboutMe = () => {
