@@ -13,7 +13,7 @@ export const PROJECTS = [
         title: "CallupCalendar",
         weblink: "https://callupcalendar.com/",
         description:
-          "CallupCalendar is a fun side project inspired by the true joy from the national pastime -- experiencing games in person. Here user can catch the Top MLB Prospects Locally.",
+          "CallupCalendar is a fun side project inspired by true joy from the national pastime -- experiencing games in person. Here user can catch the Top MLB Prospects Locally.",
       },
       {
         img: abbypagesProImg,
