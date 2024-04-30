@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { adminMailId, colors } from "../../utils/constants";
 import Button from "../../components/Button";
-import { Link } from "react-scroll";
+import {  Link } from "react-scroll";
 import Fade from "react-reveal/Fade";
 
 const AboutMe = () => {
@@ -51,12 +51,12 @@ const AboutMe = () => {
         </Fade>
         <Fade bottom>
           <div className="row mt-5">
-            <div className="col-md-6">
+            <div className="col-md-6 mt-3">
               <div style={{ paddingRight: "30px" }}>
                 <h3 className="about__content-title">Get to know me!</h3>
                 <span
                   className="heading-sec__sub mt-4 mb-2"
-                  style={{ textAlign: "start" }}
+                  // style={{ textAlign: "start" }}
                 >
                   I am passionate about building excellent software that
                   improves the lives of those around me. I specialize in
@@ -68,7 +68,7 @@ const AboutMe = () => {
 
                 <span
                   className="heading-sec__sub mt-4 mb-2"
-                  style={{ textAlign: "start" }}
+                  // style={{ textAlign: "start" }}
                 >
                   I'm open to <b>Job</b> opportunities where I can contribute,
                   learn and grow. If you have a good opportunity that matches my
@@ -96,9 +96,9 @@ const AboutMe = () => {
                 </span>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 mt-3">
               <h3 className="about__content-title">My Skills</h3>
-              <div style={{ display: "flex", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", flexWrap: "wrap", gap:'12px', justifyContent:'center' }}>
                 {skills.map((skill, index) => {
                   return (
                     <div key={index} className="css-skill">
@@ -111,7 +111,7 @@ const AboutMe = () => {
             </div>
           </div>
         </Fade>
-        <div className="mt-4 text-start">
+        <div className="mt-5 text-center">
           <Link
             to="contact"
             spy={true}

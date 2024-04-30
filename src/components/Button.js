@@ -24,7 +24,7 @@ const Button = ({
       <button
         style={{
           background: isHovered ? color : background,
-          width: width,
+          // width: width,
           color: isHovered ? background : color,
           transition: `background 0.5s ease, color 0.5s ease`,
           borderColor:background,
@@ -39,7 +39,7 @@ const Button = ({
         onClick={onClick}
         {...props}
       >
-        {label}
+        {label} 
         {showArrow && <FaArrowRight style={{ marginLeft: "20px" }} />}
       </button>
     </div>

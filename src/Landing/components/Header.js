@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
-import ViditImg from '../../assets/ViditImg.jpg'
+import ViditImg from "../../assets/ViditImg.jpg";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
   return (
     <nav
       className="navbar navbar-expand-lg"
       style={{ backgroundColor: "white" }}
     >
-      <div className="container-fluid px-5 py-1">
+      <div className="container-fluid px-4 py-1">
         <span className="navbar-brand d-flex align-items-center">
           <div>
             <img
@@ -18,7 +27,7 @@ const Header = () => {
                 height: "50px",
                 borderRadius: "50%",
                 marginRight: "15px",
-                objectFit:'cover'
+                objectFit: "cover",
               }}
               alt="logo-img"
             />
@@ -28,16 +37,15 @@ const Header = () => {
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
+          onClick={handleMenuToggle}
           aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
+          aria-expanded={isMenuOpen ? "true" : "false"}
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
         <div
-          className="collapse navbar-collapse"
+          className={`collapse navbar-collapse ${isMenuOpen ? "show" : ""}`}
           id="navbarNavAltMarkup"
           style={{ justifyContent: "end" }}
         >
@@ -49,39 +57,43 @@ const Header = () => {
                 smooth={true}
                 offset={-70} // Adjust the offset as needed
                 duration={500}
+                onClick={closeMenu}
               >
                 Home
               </Link>
             </span>
-            <span className="nav-link header-opt active">
+            <span className="nav-link header-opt active" >
               <Link
                 to="aboutMe"
                 spy={true}
                 smooth={true}
                 offset={-70} // Adjust the offset as needed
                 duration={500}
+                onClick={closeMenu}
               >
                 About
               </Link>
             </span>
-            <span className="nav-link header-opt active">
+            <span className="nav-link header-opt active" >
               <Link
                 to="projects"
                 spy={true}
                 smooth={true}
                 offset={-70} // Adjust the offset as needed
                 duration={500}
+                onClick={closeMenu}
               >
                 Projects
               </Link>
             </span>
-            <span className="nav-link header-opt active">
+            <span className="nav-link header-opt active" >
               <Link
                 to="contact"
                 spy={true}
                 smooth={true}
                 offset={-70} // Adjust the offset as needed
                 duration={500}
+                onClick={closeMenu}
               >
                 Contact
               </Link>

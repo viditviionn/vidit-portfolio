@@ -89,12 +89,10 @@
   font-weight: 700;
   font-size: 1.6rem;
   margin-bottom: 3rem;
-  text-align: start;
+  text-align: center;
 }
 .css-skill {
   padding: 0.7rem 1.3rem;
-  margin-bottom: 1.5rem;
-  margin-right: 1.5rem;
   font-size: 0.9rem;
   background: rgba(153, 153, 153, 0.2);
   border-radius: 5px;
