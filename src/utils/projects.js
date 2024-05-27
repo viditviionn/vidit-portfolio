@@ -6,6 +6,8 @@ import krustty from "../assets/krustty.png";
 import hdfc from "../assets/hdfc.jpg";
 import Inergy from "../assets/Inergy.png";
 import callUpImg from "../assets/callupcalendar.png";
+import davinta from "../assets/davinta.png";
+import edvanza from "../assets/edvanza.png";
 
 export const PROJECTS = [
     {
@@ -29,7 +31,20 @@ export const PROJECTS = [
       description:
         "Discover holistic well-being with Innergy, This app is for reducing stress, staying active, and embracing a plant-based lifestyle.",
     },
-   
+    {
+      img: edvanza,
+      title: "edvanza",
+      pslink: "https://apkpure.net/edvanza/com.edvanza.beta.android",
+      description:
+        "Edvanza is an AI powered Career Advancement Platform that helps professionals and students across the globe fast track their career growth by providing hyper-personalised guidance on 4 on Career Map, Learning, Jobs and Professional Community.",
+    },
+    {
+      img: davinta,
+      title: "Davinta",
+      pslink: "https://play.google.com/store/apps/details?id=com.davinta.serviceapp&hl=en&gl=US&pli=1",
+      description:
+        "Davinta allows retailers to conveniently get affordable financing when purchasing from their suppliers. Davinta provides invoice financing to retailers for purchases from their suppliers. We partner with Brands and Distributors and offer our credit as an exclusive solution only for retailers of our partners",
+    },
     {
       img: krustty,
       title: "Krustty",
