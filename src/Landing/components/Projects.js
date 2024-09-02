@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import { colors } from "../../utils/constants";
 
 import playStoreLogo from "../../assets/playstoreLogo.png";
+import appleStoreLogo from "../../assets/appleStoreLogo.png";
 import Button from "../../components/Button";
 import Fade from "react-reveal/Fade";
 import { PROJECTS } from "../../utils/projects";
@@ -102,6 +103,33 @@ const Projects = () => {
                             background={colors.mainColor}
                             color={"white"}
                             onClick={() => handleWebsiteClick(project.pslink)}
+                          />
+                        )}
+                        {project.appleStoreLink && (
+                          <Button
+                            label={
+                              <span
+                                style={{
+                                  display: "flex",
+                                  alignItems: "center",
+                                }}
+                              >
+                                <img
+                                  src={appleStoreLogo}
+                                  style={{
+                                    width: "28px",
+                                    marginRight: "5px",
+                                    // marginBottom: "-8px",
+                                  }}
+                                  alt="logo-img"
+                                />
+                                Download App{" "}
+                              </span>
+                            }
+                            width="230px"
+                            background={colors.mainColor}
+                            color={"white"}
+                            onClick={() => handleWebsiteClick(project.appleStoreLink)}
                           />
                         )}
                       </div>
