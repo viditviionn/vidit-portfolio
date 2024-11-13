@@ -4,7 +4,7 @@ import Info from "./components/Info";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import { Element } from "react-scroll";
-import Contact from "./components/Contact";
+// import Contact from "./components/Contact";
 
 const Index = () => {
   return (
