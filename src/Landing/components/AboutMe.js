@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
-import { adminMailId, colors } from "../../utils/constants";
-import Button from "../../components/Button";
+// import { adminMailId, colors } from "../../utils/constants";
+import { colors } from "../../utils/constants";
+// import Button from "../../components/Button";
 import { Link } from "react-scroll";
 import Fade from "react-reveal/Fade";
 
