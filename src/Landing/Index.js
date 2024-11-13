@@ -21,9 +21,9 @@ const Index = () => {
           <Element name="projects">
             <Projects />
           </Element>
-          <Element name="contact">
+          {/* <Element name="contact">
             <Contact />
-          </Element>
+          </Element> */}
         </div>
       </div>
     </Fragment>

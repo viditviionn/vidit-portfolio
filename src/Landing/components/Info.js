@@ -16,6 +16,7 @@ const Info = () => {
             alignItems: "center",
             justifyContent: "center",
             flexDirection: "column",
+            padding: "120px",
           }}
         >
           <Pulse>

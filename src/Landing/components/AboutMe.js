@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { adminMailId, colors } from "../../utils/constants";
 import Button from "../../components/Button";
-import {  Link } from "react-scroll";
+import { Link } from "react-scroll";
 import Fade from "react-reveal/Fade";
 
 const AboutMe = () => {
@@ -82,8 +82,8 @@ const AboutMe = () => {
                   >
                     <b className="contact-css7">Contact</b>&nbsp;
                   </Link>
-                  me or email me at{" "}
-                  <span
+                  me
+                  {/* <span
                     style={{
                       color: colors.mainColor,
                       textDecoration: "underline",
@@ -91,14 +91,21 @@ const AboutMe = () => {
                     }}
                   >
                     <a href={`mailto:${adminMailId}`}>{adminMailId}</a>
-                  </span>
+                  </span> */}
                   .
                 </span>
               </div>
             </div>
             <div className="col-md-6 mt-3">
               <h3 className="about__content-title">My Skills</h3>
-              <div style={{ display: "flex", flexWrap: "wrap", gap:'12px', justifyContent:'center' }}>
+              <div
+                style={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  gap: "12px",
+                  justifyContent: "center",
+                }}
+              >
                 {skills.map((skill, index) => {
                   return (
                     <div key={index} className="css-skill">
@@ -111,7 +118,7 @@ const AboutMe = () => {
             </div>
           </div>
         </Fade>
-        <div className="mt-5 text-center">
+        {/* <div className="mt-5 text-center">
           <Link
             to="contact"
             spy={true}
@@ -126,7 +133,7 @@ const AboutMe = () => {
               color={"white"}
             />
           </Link>
-        </div>
+        </div> */}
       </div>
     </Fragment>
   );
